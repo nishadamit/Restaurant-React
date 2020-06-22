@@ -1,32 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Card,Row,Container,Col } from 'react-bootstrap';
 
-export class MenuComponent extends Component {
-
-    constructor(props) {
-        super(props)
-    
-            this.state = {
-              }
-    }
-
-    render() {
-
-        console.log("props",this.props)
+const RenderMenuItem = ({dish,DishSelect}) =>{
+   return(
+        <Card onClick={() =>DishSelect(dish.id)}  >
+            <Card.Img width="100%" src={dish.image} alt={dish.name} />
+            <Card.ImgOverlay>
+                    <Card.Title>{dish.name}</Card.Title>
+            </Card.ImgOverlay>
+        </Card>
         
-        const menu = this.props.dishes.map((dish) =>{
-            return(
-                <Col key={dish.id} className="mt-1" md={6} >
-                    <Card onClick={() =>this.props.DishSelect(dish.id)}  >
-                        <Card.Img width="100%" src={dish.image} alt={dish.name} />
-                        <Card.ImgOverlay>
-                                <Card.Title>{dish.name}</Card.Title>
-                        </Card.ImgOverlay>
-                    </Card>
-                </Col>
-             )
-          })
+    )
+}
 
+function MenuComponent(props) {
+
+    const menu = props.dishes.map((dish) =>{
+        return(
+            <Col key={dish.id} className="mt-1" md={6} >
+                  <RenderMenuItem dish={dish} DishSelect={props.DishSelect}/>
+            </Col>
+         )
+      })
+        
         return (
              <Container>
                  <Row>
@@ -34,7 +30,7 @@ export class MenuComponent extends Component {
                  </Row>
              </Container>
         )
-    }
 }
+
 
 export default MenuComponent
