@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { Navbar,Container } from 'react-bootstrap';
 
+import  '../App.css'
 import { DISHES } from '../shared/dishes';
 import MenuComponent from './MenuComponent';
 import DishDetailComponent from './DishDetailComponent';
 import HeaderComponent from './HeaderComponent';
+import FooterComponent from './FooterComponent';
 
 export class MainComponent extends Component {
 
@@ -33,6 +35,7 @@ export class MainComponent extends Component {
                 <DishDetailComponent 
                  dish={this.state.dishes.filter((dish)=>dish.id == this.state.selectedDish)[0]} 
                 />
+                <FooterComponent />
            </div>
         )
     }

@@ -1,0 +1,21 @@
+/* header css */
+
+/* footer css */
+.footer-background{
+    background-color:#D1C4E9;
+    padding-top: 1%;
+}
+.footer-links{
+    text-align: center;
+    
+}
+.footer-links ul{
+    list-style: none;
+}
+.footer-links-social-icon{
+    text-align: center;
+    padding-top: 5%;
+}
+.footer-copyright{
+    text-align: center;
+}
