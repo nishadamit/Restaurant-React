@@ -4,6 +4,7 @@ import { Navbar,Container } from 'react-bootstrap';
 import { DISHES } from '../shared/dishes';
 import MenuComponent from './MenuComponent';
 import DishDetailComponent from './DishDetailComponent';
+import HeaderComponent from './HeaderComponent';
 
 export class MainComponent extends Component {
 
@@ -24,11 +25,7 @@ export class MainComponent extends Component {
     render() {
         return (
             <div>
-                <Navbar bg="primary">
-                    <Container>
-                        <Navbar.Brand>BuzzTime</Navbar.Brand>
-                    </Container>
-                </Navbar>
+                <HeaderComponent/>
                 <MenuComponent 
                     dishes = {this.state.dishes} 
                     DishSelect ={(dishId) => this.onDishSelect(dishId)}
