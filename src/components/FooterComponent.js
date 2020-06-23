@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row,Col } from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt,faFax,faEnvelope} from '@fortawesome/free-solid-svg-icons';
@@ -13,10 +14,10 @@ function FooterComponent() {
                           <Col xs={7} className="footer-links" >
                                 <h3>Links</h3>
                                 <ul>
-                                    <li><a href="#" >Home</a></li>
-                                    <li><a href="#" >About</a></li>
-                                    <li><a href="#" >Menu</a></li>
-                                    <li><a href="#" >Contact</a></li>
+                                    <li><Link to="/home" >Home</Link></li>
+                                    <li><Link to="/aboutus" >About Us</Link></li>
+                                    <li><Link to="/menu">Menu</Link></li>
+                                    <li><Link to="/contactus" >Contact Us</Link></li>
                                 </ul>
                           </Col>
                           <Col xs={5} >
@@ -25,7 +26,7 @@ function FooterComponent() {
                                  D-13 Near Kfc, Sindhiya <br></br> Building Canaught Place ,<br></br>New Delhi,India<br></br>
                                  <FontAwesomeIcon icon={faPhoneAlt} />:&nbsp;+91 9898989898<br></br>
                                  <FontAwesomeIcon icon={faFax} />: +91 9876543212 <br></br>
-                                 <FontAwesomeIcon icon={faEnvelope} />: buzztime@restaurant.com
+                                 <FontAwesomeIcon icon={faEnvelope} />: theredcafe@restaurant.com
                                  </p>
                                 
                           </Col>
@@ -41,7 +42,7 @@ function FooterComponent() {
             </Row>
             <Row className="footer-copyright" >
                 <Col>
-                    <p>	&copy; Copyright 2020 buzztime</p>
+                    <p>	&copy; Copyright 2020 The Red Cafe</p>
                 </Col>
             </Row>
         </div>

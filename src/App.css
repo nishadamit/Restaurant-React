@@ -1,5 +1,7 @@
 /* header css */
-
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
 /* footer css */
 .footer-background{
     background-color:#D1C4E9;
