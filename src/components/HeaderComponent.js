@@ -11,7 +11,7 @@ class HeaderComponent extends Component {
                     <Navbar.Brand>
                             <img src="assets/images/logo.png" height="40" width="51" alt="The Red Cafe" />
                         </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" inverse />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto header-link-color">
                         <Nav.Link href="/home"><FontAwesomeIcon icon={faHome} size="2x" color="white" />Home</Nav.Link>
