@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row,Container,Col,ButtonGroup,Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhoneAlt,faFax,faEnvelope,fa} from '@fortawesome/free-solid-svg-icons';
+import { faPhoneAlt,faFax,faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 function ContactUsComponent() {
     return (

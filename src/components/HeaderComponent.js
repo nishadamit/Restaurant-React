@@ -17,7 +17,7 @@ class HeaderComponent extends Component {
                         <Nav.Link href="/home"><FontAwesomeIcon icon={faHome} size="2x" color="white" />Home</Nav.Link>
                         <Nav.Link href="/aboutus"><FontAwesomeIcon icon={faInfo} size="2x" color="white" />About Us</Nav.Link>
                         <Nav.Link href="/menu"><FontAwesomeIcon icon={faList} size="2x" color="white" />Menu</Nav.Link>
-                        <Nav.Link href="contactus"><FontAwesomeIcon icon={faAddressCard} size="2x" color="white" />Contact Us</Nav.Link>
+                        <Nav.Link href="/contactus"><FontAwesomeIcon icon={faAddressCard} size="2x" color="white" />Contact Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>

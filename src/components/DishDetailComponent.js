@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card,Row,Container,Col,Breadcrumb } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const RenderComments = ({comment}) =>{
     return(
@@ -26,14 +25,14 @@ const RenderDish =({dish}) =>{
 }
 
 function DishDetailComponent(props) {
-    console.log("props",props)
+    // console.log("props",props)
     if(props.dish != null){
         return (
             <Container>
-                <Row>
+                <Row className="mb-1" >
                  <Breadcrumb  >
-                       <Breadcrumb.Item ><Link to="/home" >Home</Link></Breadcrumb.Item>
-                       <Breadcrumb.Item ><Link to="/menu" >Menu</Link></Breadcrumb.Item>
+                       <Breadcrumb.Item href="/home" >Home</Breadcrumb.Item>
+                       <Breadcrumb.Item href="/menu" >Menu</Breadcrumb.Item>
                        <Breadcrumb.Item active >{props.dish.name}</Breadcrumb.Item>
                   </Breadcrumb>
                 </Row>

@@ -13,6 +13,7 @@ import HeaderComponent from './HeaderComponent';
 import FooterComponent from './FooterComponent';
 import HomeComponent from './HomeComponent';
 import ContactUsComponent from './ContactUsComponent';
+import AboutUs from './AboutUs';
 
 export class MainComponent extends Component {
 
@@ -23,8 +24,7 @@ export class MainComponent extends Component {
              dishes:DISHES,
              comments:COMMENTS,
              leaders:LEADERS,
-             promotions:PROMOTIONS,
-             selectedDish:null
+             promotions:PROMOTIONS
         }
     }
 
@@ -58,6 +58,7 @@ export class MainComponent extends Component {
                      <Route exact path="/menu" component={() => <MenuComponent dishes={this.state.dishes}/>}/> 
                      <Route path="/menu/:dishId" component={DishWithId}/>
                      <Route exact path="/contactus" component={ContactUsComponent}/>
+                     <Route exact path="/aboutus" component={() =><AboutUs leaders={this.state.leaders} />} />
                      <Redirect to="/home" />
                  </Switch>
                 <FooterComponent />

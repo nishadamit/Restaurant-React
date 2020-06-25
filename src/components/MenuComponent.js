@@ -30,7 +30,7 @@ function MenuComponent(props) {
              <Container>
                  <Row>
                  <Breadcrumb  >
-                       <Breadcrumb.Item ><Link to="/home" >Home</Link></Breadcrumb.Item>
+                       <Breadcrumb.Item href="/home" >Home</Breadcrumb.Item>
                        <Breadcrumb.Item active>Menu</Breadcrumb.Item>
                   </Breadcrumb>
                  </Row>
