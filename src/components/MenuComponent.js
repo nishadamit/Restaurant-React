@@ -38,7 +38,7 @@ function MenuComponent(props) {
                      <h3>Menu</h3>
                  </Row>
                  <hr/>
-                 <Row>
+                 <Row className="mb-4" >
                     {menu}
                  </Row>
              </Container>

@@ -16,12 +16,11 @@ const RenderItem = ({item}) =>{
 
 
 function HomeComponent(props) {
-
     // console.log("this",props)
 
     return (
            <Container>
-               <Row>
+               <Row className="mb-4">
                    <Col md={4} >
                        <RenderItem item ={props.dish} />
                    </Col>
