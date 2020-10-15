@@ -45,5 +45,4 @@ function MenuComponent(props) {
         )
 }
 
-
 export default MenuComponent

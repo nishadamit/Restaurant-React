@@ -14,10 +14,8 @@ const RenderItem = ({item}) =>{
     )
 }
 
-
 function HomeComponent(props) {
     // console.log("this",props)
-
     return (
            <Container>
                <Row className="mb-4">
